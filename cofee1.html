@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Pot</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    :root {
+      --main-color: #f2ae5c;
+      --black: #000000;
+      --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    }
+
+    html {
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-padding-top: 9rem;
+      scroll-behavior: smooth;
+
+    }
+
+    html::-webkit-scrollbar {
+      width: .5rem;
+    }
+
+    html::-webkit-scrollbar-track {
+      background-color: transparent;
+      outline: none;
+      border: none;
+    }
+
+    html::-webkit-scrollbar-thumb {
+      background: var(--main-color);
+      border-radius: 5rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      transition: all 0.4s linear;
+      box-sizing: border-box;
+      text-decoration: none;
+      text-transform: capitalize;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--black);
+      background-image: url(./m1.jpg);
+      background-repeat: no-repeat;
+    }
+
+    .header {
+      background: var(--black);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 7%;
+      height: 10Vh;
+      border-bottom: var(--border);
+      border-top: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .header .navbar a {
+      margin: 1.7rem;
+      font-size: 1.6rem;
+      color: #fff;
+    }
+
+    .header .navbar a:hover {
+      color: var(--main-color);
+      border-bottom: 0.1rem solid var(--main-color);
+      padding-bottom: .5rem;
+    }
+
+    .logo img {
+      width: 109%;
+      height: 71px;
+    }
+
+    .background {
+      position: relative;
+      left: 23px;
+    }
+
+    .fresh {
+      color: #fff;
+      position: relative;
+      top: 200px;
+      right: -60px;
+      font-weight: bolder;
+      font-size: 81px;
+    }
+
+    .lorem {
+      color: rgb(102, 99, 99);
+      position: relative;
+      top: 215px;
+      right: -66px;
+      font-size: 15px;
+    }
+
+    .button1 {
+      color: #fff;
+      position: relative;
+      top: 30rem;
+      left: 8rem;
+      text-align: center;
+      background: var(--main-color);
+      padding: 13px 0px 10px 0px;
+      font-size: 14px;
+      font-weight: 500;
+      width: 10%;
+    }
+
+    .button1:hover {
+      color: var(--black);
+      /* font-weight: 900; */
+    }
+
+    /*........... ABOUT Us................ */
+    .AboutUS {
+      margin: 52px 2px 2px 2px;
+    }
+
+    .aboutus {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 70px;
+      top: -69rem;
+    }
+
+    .about {
+      color: var(--main-color);
+      position: relative;
+      top: 700px;
+      left: -55px;
+      display: flex;
+      font-weight: 600;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+    }
+
+    .us {
+      color: white;
+      position: relative;
+      top: 700px;
+      left: -41px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      font-weight: 600;
+    }
+
+    .cup {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: relative;
+      top: 5rem;
+      width: 72%;
+      height: 36vh;
+      left: 281px;
+    }
+
+    .imge img {
+      width: 98%;
+      height: 50vh;
+      position: relative;
+      left: -81px;
+    }
+
+    .lor {
+      position: relative;
+      top: 23px;
+      left: 35px;
+      font-size: 12px;
+      color: var(--main-color);
+    }
+
+    .lore {
+      position: relative;
+      top: 58px;
+      left: 16px;
+      font-size: 12px;
+      color: var(--main-color);
+    }
+
+    .lorer {
+      position: relative;
+      top: 82px;
+      left: 70px;
+      font-size: 12px;
+      color: var(--main-color);
+    }
+
+    .question {
+      background-color: var(--black);
+      font-size: 28px;
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+      top: 23px;
+    }
+
+    .button2 {
+      color: #fff;
+      position: relative;
+      top: -2rem;
+      left: 59rem;
+      text-align: center;
+      background: var(--main-color);
+      padding: 13px 0px 10px 0px;
+      font-size: 14px;
+      font-weight: 500;
+      width: 24%;
+    }
+
+    .AboutUs {
+      background-color: var(--black);
+    }
+
+    .button2:hover {
+      color: var(--black);
+    }
+
+    /* ..............OUR MENU..........  */
+    .OurMenu {
+      width: 10%;
+      display: flex;
+      font-size: 43px;
+      position: relative;
+      left: 740.1px;
+      font-weight: 700;
+      bottom: -346px;
+    }
+
+    .our {
+      font-size: 700;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      color: var(--main-color);
+      display: flex;
+      justify-content: center;
+      position: relative;
+      left: 12px;
+    }
+
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      overflow-wrap: normal;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 11rem;
+      left: 83px;
+    }
+
+    .box {
+      border: none;
+      outline: none;
+      background-color: rgba(169, 169, 169, 0.115);
+      color: rgb(255, 255, 255);
+      width: 20%;
+      height: 45vh;
+      margin: -1px 78px 78px 2px;
+
+    }
+
+    .box:hover {
+      color: #000000;
+      background-color: rgb(255, 255, 255);
+      transform: skew(12px);
+      transition-duration: 0.4s;
+
+    }
+
+    .box img {
+      width: 40%;
+      height: 15vh;
+      margin: 36px 22px 22px 85px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .box span {
+      font-weight: 600;
+      font-size: 22px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box h3 {
+      font-weight: 200;
+      font-size: 15px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 24px 2px 2px;
+    }
+
+    .box h2 {
+      border: none;
+      background-color: var(--main-color);
+      color: #fff;
+      font-size: 12px;
+      padding: 14px 0px 9px;
+      width: 33%;
+      margin: 31px 0px 3px 108px;
+    }
+
+    .box h2:hover {
+      color: black;
+      box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+      font-size: 12px;
+    }
+
+    .latpro {
+      font-size: 43px;
+      font-weight: 600;
+      color: white;
+      position: relative;
+      top: 6rem;
+      left: 617px;
+    }
+
+    .latpro span {
+      color: var(--main-color);
+    }
+
+    /* ..........Products.............  */
+    .boxer2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 9rem;
+    }
+
+    .box0 {
+      /* border: 2px solid red; */
+      display: flex;
+      background-color: rgba(169, 169, 169, 0.115);
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      width: 20%;
+      height: 66vh;
+      margin: 57px 75px 1px 57px;
+    }
+
+    .box0 span {
+      /* border: 2px solid red; */
+      margin: 9px 33px 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 7vh;
+    }
+
+    .small {
+      /* border: 2px solid red; */
+      color: #fff;
+      text-align: center;
+      height: 29px;
+      width: 21%;
+      text-align: center;
+      margin: 6px 52px 0px 8px;
+      padding: 8px 0px 2px 2px;
+      position: relative;
+      left: 38px;
+    }
+
+    .box0 span .icon {
+      font-size: 23px;
+      border: 2px solid rgba(255, 255, 255, 0);
+      padding: 4px 0px 0px;
+      border-radius: 7px;
+    }
+
+    .box0 span .icon:hover {
+      color: goldenrod;
+      font-size: 25px;
+      transition-duration: 0.2s;
+      transition: all 0.1s;
+      background-color: rgb(70, 70, 70);
+    }
+
+    .box0 img {
+      width: 66%;
+      height: 30vh;
+      display: block;
+      margin: 109px 2px -354px -321px;
+    }
+
+    .box0 h6 {
+      font-size: 21px;
+      font-weight: 600;
+      color: #fff;
+      margin: 376px -169px 0px;
+    }
+
+    .star {
+      color: goldenrod;
+      font-size: 23px;
+      position: relative;
+      top: 388px;
+      right: 150px;
+    }
+
+    .rate {
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+      font-weight: 400;
+      position: relative;
+      top: 440px;
+      left: -202px;
+      margin: 0px -34px -10px;
+    }
+
+    .img3 {
+      width: 23%;
+      height: 20vh;
+      position: relative;
+      left: 23px;
+    }
+
+    /* ................. REVIEW ........................  */
+    .CustomerReview {
+      font-size: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      top: -18rem;
+    }
+
+    .customer {
+      color: white;
+      font-size: 50px;
+      font-weight: 900;
+      position: relative;
+      top: 234px;
+      left: -9px;
+
+    }
+
+    .review {
+      color: var(--main-color);
+      font-size: 50px;
+      font-weight: 900;
+      position: relative;
+      top: 234px;
+      left: 12px;
+
+    }
+
+    .manbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .man {
+      border: none;
+      border-radius: 9px;
+      background-color: rgb(70, 70, 70);
+      color: white;
+      margin: 9px 34px -462px 85px;
+      width: 23%;
+      height: 62vh;
+      position: relative;
+      top: 10rem;
+      text-align: center;
+    }
+
+    .coma {
+      font-size: 19rem;
+      display: flex;
+      height: 0vh;
+      margin: 97px 16px -89px 12px;
+      color: var(--main-color);
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .em {
+      border: transparent;
+      margin: -104px 37px 2px;
+    }
+
+    .rem {
+      font-size: 13px;
+      letter-spacing: 1px;
+      display: block;
+      padding: 1px 14px 4px 30px;
+      position: relative;
+      top: 144px;
+      text-align: center;
+    }
+
+    .sting img {
+      width: 20%;
+      height: 9vh;
+      margin: 175px 2px 2px 2px;
+      border-radius: 50%;
+    }
+
+    .jon {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 2px 2px 2px 2px;
+    }
+
+    .gold {
+      color: var(--main-color);
+      font-size: 25px;
+    }
+
+    /* .............CONTACT US...... */
+    .ContactUs {
+      font-size: 56px;
+      color: white;
+      position: relative;
+      top: 1945px;
+      left: 38%;
+      display: flex;
+      font-weight: 700;
+    }
+
+    .Us {
+      color: var(--main-color);
+      position: relative;
+      left: 30px;
+    }
+
+    .cu {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      border: none;
+      position: relative;
+      top: 66rem;
+      left: 158px;
+      height: 50vh;
+      width: 80%;
+    }
+
+    .map {
+      overflow: hidden;
+      margin: 2px 2px 2px 2px;
+    }
+
+    .map iframe {
+      background-position: center;
+      width: 67rem;
+      background-size: cover;
+    }
+
+    .index {
+      margin: 42px 13px 14px 137px;
+      padding: 16px 176px 11px 8px;
+      position: relative;
+      top: 33px;
+      left: -65px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background-color: #000000;
+      border-bottom: 2px solid white;
+      outline: none;
+      color: gray;
+      font-size: 17px;
+    }
+
+    .email {
+      text-transform: lowercase;
+    }
+
+    .cnp label {
+      margin: 22px 25px 8px;
+    }
+
+    .get {
+      font-size: 43px;
+      font-weight: 700;
+      color: grey;
+      position: relative;
+      top: 23px;
+      left: 25%;
+    }
+
+    /* ...............OUR BLOGS................. */
+    .maindiv {
+      position: relative;
+      top: 9rem;
+      width: 100%;
+      height: 65vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .blogt {
+      display: flex;
+      font-size: 50px;
+      font-weight: 700;
+      position: relative;
+      top: -304px;
+      left: 66rem;
+    }
+
+    .ips {
+      color: var(--main-color);
+      position: relative;
+      left: 20px;
+    }
+
+    .boxd {
+      border: 2px solid #7e7e7e;
+      margin: -7px 24px 2px;
+      width: 24%;
+      height: 60vh;
+      position: relative;
+      left: -98px;
+      top: 23px;
+    }
+
+    .boxd img {
+      width: 100%;
+      overflow: hidden;
+      height: 31vh;
+    }
+
+    .boxd img:hover {
+      transform: scale(1.1);
+      transition-duration: 0.2s;
+    }
+
+    .tas {
+      font-size: 26px;
+      font-weight: 600;
+      color: rgb(241 243 244);
+      position: relative;
+      top: 12px;
+    }
+
+    .alt {
+      color: var(--main-color);
+      font-size: 19px;
+      font-weight: 800;
+      position: relative;
+      top: 16px;
+      left: -50px;
+    }
+
+    .lou {
+      color: whitesmoke;
+      font-size: 14px;
+      position: relative;
+      top: 28px;
+    }
+
+    .nuts {
+      border: none;
+      background-color: var(--main-color);
+      display: flex;
+      width: 29%;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      margin: 52px 44px 2px;
+      padding: 9px 4px 9px;
+      color: #fff;
+    }
+
+    .nuts:hover {
+      color: black;
+      font-size: 15px;
+    }
+
+    /* .................FOOTER SECTION.............. */
+    .footer {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      background: var(--main-color);
+      position: relative;
+      top: 95rem;
+      height: 28vh;
+      left: 2px;
+    }
+
+    .foot {
+      display: flex;
+      margin: 2px 2px 2px;
+      position: relative;
+      top: -8px;
+      left: 12px;
+    }
+
+    .social {
+      font-size: 36px;
+      color: black;
+      border-radius: 50%;
+      margin: -85px 31px 2px;
+      position: relative;
+      left: 490px;
+    }
+
+    .hea {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .srt {
+      border: 2px solid black;
+      display: flex;
+      color: black;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: -24px 27px 2px;
+      padding: 3px 11px 2px;
+      position: relative;
+      top: 19px;
+      left: -231px;
+      font-size: 17px;
+    }
+
+    .srt:hover {
+      color: white;
+      border: 2px solid whitesmoke;
+      cursor: pointer;
+    }
+
+    .uzer {
+      font-size: 12px;
+      position: relative;
+      margin: 1px -109px 5px;
+      top: 75px;
+      left: -696px;
+    }
+
+    .uzer:hover {
+      color: #fff;
+    }
+
+    #About {
+      /* border: 2px solid red; */
+      position: relative;
+      top: 47rem;
+      height: 80vh;
+    }
+
+    #Menu {
+      /* border: 2px solid red; */
+      position: relative;
+      top: 54rem;
+      left: 24px;
+      height: 140vh;
+    }
+
+    #Product {
+      /* border: 2px solid red; */
+      position: relative;
+      top: 43rem;
+      height: 173vh;
+    }
+
+    #Review {
+      /* border: 2px solid red; */
+      position: relative;
+      top: 48rem;
+      height: 80vh;
+    }
+
+    #Contact {
+      /* border: 2px solid red; */
+      position: relative;
+      top: 60rem;
+      width: 24%;
+    }
+
+    #Blogs {
+      /* border: 2px solid red; */
+      position: relative;
+      top: 74rem;
+      height: 60vh;
+    }
+  </style>
+</head>
+
+<body>
+  <!--..................... header section starts......................... -->
+  <header class="header">
+    <a href="#Home" class="logo">
+      <img src="m0.png" alt="">
+    </a>
+    <nav class="navbar">
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Menu">Menu</a>
+      <a href="#Product">Product</a>
+      <a href="#Review">Review</a>
+      <a href="#Contact">Contact</a>
+      <a href="#Blogs">Blogs</a>
+    </nav>
+    <!-- <div class="icons">
+      <div><i class="fa-sharp fa-solid fa-magnifying-glass"></i></div>
+      <div><i class="fa-regular fa-bag-shopping"></i></div>
+      <div><i class="fa-regular fa-bars"></i></div>
+    </div> -->
+  </header>
+  <section class="background" id="Home">
+    <div class="back">
+      <div class="fresh"> FRESH COFFEE IN <br>
+        THE MORNING
+      </div>
+      <div class="lorem">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus eos quidem numquam volu <br> officia provident
+        amet! Minima quae hic ut nostrum impedit dolores?
+      </div>
+    </div>
+    <div class="button1">
+      Get it Now
+    </div>
+  </section>
+  <!-- ..............About us section Starts....................... -->
+  <section class="AboutUS" id="About">
+    <div class="aboutus">
+      <div class="about">
+        ABOUT
+      </div>
+      <div class="us">
+        US
+      </div>
+    </div>
+    <div class="cup">
+      <div class="imge"> <img src="m6.png" alt="">
+      </div>
+      <div class="question">
+        What Makes Our Coffee Special ?
+        <div class="lor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni dignissimos voluptatem
+          saepe, reprehenderit corrupti illum, iure, qui provident nihil unde mollitia a placeat sit ab temporibus! Est
+          incidunt laudantium cum ratione.. Molestiae magni dignissimos voluptatem saepe, reprehenderit corrupti illum,
+          iure, qui provident nihil unde mollitia a placeat sit ab temporibus! Est incidunt laudantium cum ratione.
+        </div>
+        <div class="lore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni dignissimos
+          voluptatem saepe, reprehenderit corrupti illum, iure, qui provident nihil unde mollitia a placeat sit ab
+          temporibus! Est incidunt laudantium cum ratione.</div>
+        <div class="lorer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni dignissimos
+          voluptatem saepe, reprehenderit corrupti illum, iure, qui provident nihil unde mollitia a placeat sit ab
+          temporibus! Est incidunt laudantium cum ratione.</div>
+      </div>
+        <a href="https://en.wikipedia.org/wiki/Coffee" class="button2">Learn More</a>
+    </div>
+    <div class="OurMenu">
+      <div class="our">
+        OUR
+      </div>
+      <div class="menu">
+        MENU
+      </div>
+    </div>
+  </section>
+  <!-- ....................OUR MENU...................... -->
+  <section class="boxer" id="Menu">
+    <div class="boxes">
+      <div class="box">
+        <img src="s1.jpg" alt="">
+        <span> Tasty And Healthy</span>
+        <h3>$ 15.99</h3>
+        <h2>Add To Cart</h2>
+      </div>
+      <div class="box">
+        <img src="s6.jpg" alt="">
+        <span> Tasty And Healthy</span>
+        <h3>$ 15.99</h3>
+        <h2>Add To Cart</h2>
+      </div>
+      <div class="box">
+        <img src="s2.jpg" alt="">
+        <span>Tasty And Healthy</span>
+        <h3>$ 15.99</h3>
+        <h2>Add To Cart</h2>
+      </div>
+      <div class="box">
+        <img src="s3.jpg" alt="">
+        <span> Tasty And Healthy</span>
+        <h3>$ 15.99</h3>
+        <h2>Add To Cart</h2>
+      </div>
+      <div class="box">
+        <img src="s4.jpg" alt="">
+        <span> Tasty And Healthy</span>
+        <h3>$ 15.99</h3>
+        <h2>Add To Cart</h2>
+      </div>
+      <div class="box">
+        <img src="s5.jpg" alt="">
+        <span>Tasty And Healthy</span>
+        <h3>$ 15.99</h3>
+        <h2>Add To Cart</h2>
+      </div>
+    </div>
+  </section>
+  <!-- ...................LATEST PROJECTS...................  -->
+  <section id="Product">
+    <div class="latpro">LATEST <span>PRODUCTS</span></div>
+    <div class="boxer2">
+      <div class="box0">
+        <span>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="cart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="star">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="rate">
+            $15.99
+          </div>
+        </span>
+        <img src="n1.png" alt="">
+        <h6>Fresh Coffee</h6>
+      </div>
+      <div class="box0">
+        <span>
+          <div class="small">
+            <div>
+              <div class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="star">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="rate">
+            $15.99
+          </div>
+        </span>
+        <img src="n2.png" alt="">
+        <h6>Fresh Coffee</h6>
+      </div>
+      <div class="box0">
+        <span>
+          <div class="small">
+            <div>
+              <div class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="star">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="rate">
+            $15.99
+          </div>
+        </span>
+        <img src="n3.png" alt="" class="img3">
+        <h6>Fresh Coffee</h6>
+      </div>
+      <div class="box0">
+        <span>
+          <div class="small">
+            <div>
+              <div class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="star">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="rate">
+            $15.99
+          </div>
+        </span>
+        <img src="n1.png" alt="" class="img4">
+        <h6>Fresh Coffee</h6>
+      </div>
+      <div class="box0">
+        <span>
+          <div class="small">
+            <div>
+              <div class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="star">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="rate">
+            $15.99
+          </div>
+        </span>
+        <img src="n2.png" alt="" class="img5">
+        <h6>Fresh Coffee</h6>
+      </div>
+      <div class="box0">
+        <span>
+          <div class="small">
+            <div>
+              <div class="icon">
+                <ion-icon name="cart-outline"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="heart-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="small">
+            <div class="icon">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="star">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+          <div class="rate">
+            $15.99
+          </div>
+        </span>
+        <img src="n3.png" alt="" class="img6">
+        <h6>Fresh Coffee</h6>
+      </div>
+    </div>
+  </section>
+  <!-- ..............Reviews.............   -->
+  <section class="REVIEWS" id="Review">
+    <div class="CustomerReview">
+      <div class="customer">
+        CUSTOMER'S
+      </div>
+      <div class="review">
+        REVIEW
+      </div>
+    </div>
+    <div class="manbox">
+      <div class="man">
+        <div class="coma">&#8220;</div>
+        <div class="em">
+          <span class="rem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste, nobis odio necessitatibus aliquid
+            cupiditate? Ratione, repudiandae incidunt, distinctio obcaecati inventore ad facilis expedita dolore magnam
+            repellat numquam vero quae?
+          </span>
+        </div>
+        <div class="sting img">
+          <img src="red.png" alt="">
+          <div class="jon">
+            John Deo
+          </div>
+          <div class="gold">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+        </div>
+      </div>
+      <div class="man">
+        <div class="coma">&#8220;</div>
+        <div class="em">
+          <span class="rem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste, nobis odio necessitatibus aliquid
+            cupiditate? Ratione, repudiandae incidunt, distinctio obcaecati inventore ad facilis expedita dolore magnam
+            repellat numquam vero quae?
+          </span>
+        </div>
+        <div class="sting img">
+          <img src="red.png" alt="">
+          <div class="jon">
+            John Deo
+          </div>
+          <div class="gold">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+        </div>
+      </div>
+      <div class="man">
+        <div class="coma">&#8220;</div>
+        <div class="em">
+          <span class="rem">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad iste, nobis odio necessitatibus aliquid
+            cupiditate? Ratione, repudiandae incidunt, distinctio obcaecati inventore ad facilis expedita dolore magnam
+            repellat numquam vero quae?
+          </span>
+        </div>
+        <div class="sting img">
+          <img src="red.png" alt="">
+          <div class="jon">
+            John Deo
+          </div>
+          <div class="gold">
+            &#9733;&#9733;&#9733;&#9733;&#9734;
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- .............CONTACT US.................   -->
+  <section class="ContactUs" id="Contact">
+    <div class="Contact">
+      CONTACT
+    </div>
+    <div class="Us">
+      US
+    </div>
+  </section>
+  <section class="cu">
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5376.147570225572!2d75.90381565494265!3d17.673332795754558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5dba11c5d1fbf%3A0xfed8eff0de4b0a78!2zQmlqYXB1ciBCZXMgKOCkrOCkv-CknOCkvuCkquClgeCksCDgpLXgpYfgpLgp!5e0!3m2!1sen!2sin!4v1665280085995!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+    </div>
+    <div class="cnp">
+      <div class="get">
+        GET IN TOUCH
+      </div>
+      <label for="name"></label>
+      <input type="text" placeholder="Name" class="index"> <br>
+      <label for="email"></label>
+      <input type="email" name="email" id="email" placeholder="email" class="index email"> <br>
+      <label for="number"></label>
+      <input type="number" name="number" id="number" placeholder="number" class="index"> <br>
+    </div>
+  </section>
+  <!-- ................Our Blogs.......................      -->
+  <section class="blogs" id="Blogs">
+    <div class="maindiv">
+      <div class="blogt">
+        <div class="our">OUR</div>
+        <div class="ips">BLOGS</div>
+      </div>
+      <div class="boxd">
+        <img src="s1.jpg" alt="">
+        <div class="tas">
+          Tasty And Refreshing Coffee
+        </div>
+        <div class="alt">
+          By Admin / 9 October 2022
+        </div>
+        <div class="lou">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis accusamus repudiandae labore.
+        </div>
+        <div class="nuts">
+          Read More
+        </div>
+      </div>
+      <div class="boxd">
+        <img src="s5.jpg" alt="">
+        <div class="tas">
+          Tasty And Refreshing Coffee
+        </div>
+        <div class="alt">
+          By Admin / 9 October 2022
+        </div>
+        <div class="lou">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis accusamus repudiandae labore.
+        </div>
+        <div class="nuts">
+          Read More
+        </div>
+      </div>
+      <div class="boxd">
+        <img src="f3.jpg" alt="">
+        <div class="tas">
+          Tasty And Refreshing Coffee
+        </div>
+        <div class="alt">
+          By Admin / 9 October 2022
+        </div>
+        <div class="lou">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis accusamus repudiandae labore.
+        </div>
+        <div class="nuts">
+          Read More
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ..........FOOTER SECTION.............    -->
+  <section class="footer">
+    <footer class="foot">
+       <a href="https://www.facebook.com/"  class="social"> <ion-icon name="logo-facebook"></ion-icon></a>
+       <a href="https://www.instagram.com/"  class="social"><ion-icon name="logo-instagram"></ion-icon></a>
+       <a href="https://twitter.com/i/flow/login"  class="social">   <ion-icon name="logo-twitter"></ion-icon></a>
+       <a href="https://github.com/"  class="social">   <ion-icon name="logo-github"></ion-icon></a>
+       <a href="https://www.youtube.com/"  class="social">  <ion-icon name="logo-youtube"></ion-icon></a>
+      <div class="hea">
+        <div class="dell"><a href="#Home" class="srt">Home</a></div>
+        <div class="dell"><a href="#About" class="srt">About</a></div>
+        <div class="dell"><a href="#Menu" class="srt">Menu</a></div>
+        <div class="dell"><a href="#Product" class="srt">Product</a></div>
+        <div class="dell"><a href="#Review" class="srt">Review</a></div>
+        <div class="dell"><a href="#Contact" class="srt">Contact</a></div>
+        <div class="dell"><a href="#Blogs" class="srt">Blogs</a></div>
+      </div>
+    </footer>
+    <div class="uzer"> Created by Uzer Nizaamuddin Qureshi <br> All Right Reserved</div>
+  </section>
+  <script src="https://kit.fontawesome.com/c523bcbdf1.js" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

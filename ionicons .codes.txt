@@ -1,0 +1,163 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">     for GOOGLE ICONS
+
+
+
+
+
+
+IONICON
+
+IN LAST INE OF BODY::::
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+HOME::::<ion-icon name="home-outline"></ion-icon>
+phone::::<ion-icon name="call-outline"></ion-icon>
+chats::::<ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+settings:::<ion-icon name="settings-outline"></ion-icon>
+Profile:::<ion-icon name="person-outline"></ion-icon>
+bin::::<ion-icon name="trash-bin-outline"></ion-icon>
+Camera::<ion-icon name="trash-bin-outline"></ion-icon>
+book mark:::<ion-icon name="bookmark-outline"></ion-icon>
+cart:::<ion-icon name="cart-outline"></ion-icon>
+check circle:::<ion-icon name="cart-outline"></ion-icon>
+page::::<ion-icon name="document-outline"></ion-icon>
+add file :::<ion-icon name="duplicate-outline"></ion-icon>
+fork::::<ion-icon name="git-network-outline"></ion-icon>
+globe:::<ion-icon name="git-network-outline"></ion-icon>
+box:::<ion-icon name="grid-outline"></ion-icon>
+message::::<ion-icon name="grid-outline"></ion-icon>
+music::::<ion-icon name="grid-outline"></ion-icon>
+adjust:::<ion-icon name="grid-outline"></ion-icon>
+power::::<ion-icon name="grid-outlin e"></ion-icon>
+hamburger::::<ion-icon name="reorder-three-outline"></ion-icon>
+education:::<ion-icon name="reorder-three-outline"></ion-icon>
+shop::::<ion-icon name="storefront-outline"></ion-icon>
+share:::<ion-icon name="send-outline"></ion-icon>
+clip-board:::<ion-icon name="clipboard-outline"></ion-icon>
+compass:::<ion-icon name="compass-outline"></ion-icon>
+search::::<ion-icon name="search-outline"></ion-icon>
+add profile::::<ion-icon name="search-outline"></ion-icon>
+print:::<ion-icon name="print-outline"></ion-icon>
+notification:<ion-icon name="notifications-outline"></ion-icon>
+gps:::<ion-icon name="navigate-outline"></ion-icon>
+images::::<ion-icon name="navigate-outline"></ion-icon>
+announcement:::<ion-icon name="megaphone-outline"></ion-icon>
+games:::<ion-icon name="megaphone-outline"></ion-icon>
+mic:::<ion-icon name="mic-outline"></ion-icon>
+eye:::<ion-icon name="eye-outline"></ion-icon>
+copy:::<ion-icon name="megaphone-outline"></ion-icon>
+files::::<ion-icon name="megaphone-outline"></ion-icon>
+shield::::<ion-icon name="shield-outline"></ion-icon>
+back-circle arrow:::<ion-icon name="megaphone-outline"></ion-icon>
+front-circle arrow:::<ion-icon name="megaphone-outline"></ion-icon>
+moon:::<ion-icon name="moon-outline"></ion-icon>
+bar-chart::::<ion-icon name="stats-chart-outline"></ion-icon>
+location:::<ion-icon name="location-outline"></ion-icon>
+up-circle arrow:::<ion-icon name="chevron-up-circle-outline"></ion-icon>
+down-circle arrow::<ion-icon name="chevron-down-circle-outline"></ion-icon>
+cloud:::<ion-icon name="cloudy-outline"></ion-icon>
+bulb:::<ion-icon name="bulb-outline"></ion-icon>
+man::::<ion-icon name="man-outline"></ion-icon>
+women:::<ion-icon name="woman-outline"></ion-icon>
+lock:::<ion-icon name="lock-closed-outline"></ion-icon>
+bug:::<ion-icon name="bug-outline"></ion-icon>
+comment::::<ion-icon name="bug-outline"></ion-icon>
+colors::::<ion-icon name="color-palette-outline"></ion-icon>
+documents:::<ion-icon name="color-palette-outline"></ion-icon>
+plus icon::::<ion-icon name="add-outline"></ion-icon>
+error icon:::<ion-icon name="alert-circle-outline"></ion-icon>
+bag-shop:::<ion-icon name="bag-handle-outline"></ion-icon>
+art-brush:::<ion-icon name="brush-outline"></ion-icon>
+car1::::::<ion-icon name="car-sport-outline"></ion-icon>
+links:::<ion-icon name="attach-outline"></ion-icon>
+car2::::<ion-icon name="car-outline"></ion-icon>
+gym-dumbell::::<ion-icon name="barbell-outline"></ion-icon>
+debit-card outline:::<ion-icon name="card-outline"></ion-icon>
+desktop-screen:::::<ion-icon name="desktop-outline"></ion-icon>
+air-plane:::<ion-icon name="airplane-outline"></ion-icon>
+blutooth:::;<ion-icon name="bluetooth-outline"></ion-icon>
+fire-flame:::<ion-icon name="flame-outline"></ion-icon>
+energy:::<ion-icon name="flash-outline"></ion-icon>
+repair::::<ion-icon name="construct-outline"></ion-icon>
+volume::::<ion-icon name="volume-high-outline"></ion-icon>
+3dots-straight line::::<ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+3dots vertical line::::<ion-icon name="ellipsis-vertical-outline"></ion-icon>
+burger cold-drink:::<ion-icon name="fast-food-outline"></ion-icon>
+restaurant::::<ion-icon name="restaurant-outline"></ion-icon>
+finger-print:::<ion-icon name="finger-print-outline"></ion-icon>
+movie::::<ion-icon name="film-outline"></ion-icon>
+funnel-filter::::<ion-icon name="funnel-outline"></ion-icon>
+gift::::<ion-icon name="gift-outline"></ion-icon>
+chem::<ion-icon name="flask-outline"></ion-icon>
+head-set:::<ion-icon name="flask-outline"></ion-icon>
+heart:::<ion-icon name="heart-outline"></ion-icon>
+question-mark:::<ion-icon name="help-circle-outline"></ion-icon>
+infinite::::<ion-icon name="infinite-outline"></ion-icon>
+first aid::<ion-icon name="medkit-outline"></ion-icon>
+relode -circle:::<ion-icon name="reload-circle-outline"></ion-icon>
+relode::::<ion-icon name="reload-outline"></ion-icon>
+badges:::<ion-icon name="ribbon-outline"></ion-icon>
+rocket::::<ion-icon name="rocket-outline"></ion-icon>
+danger::::<ion-icon name="skull-outline"></ion-icon>
+calender:::<ion-icon name="today-outline"></ion-icon>
+pay- pay::::<ion-icon name="wallet-outline"></ion-icon>
+trash:::::<ion-icon name="trash-outline"></ion-icon>
+amazon:::::<ion-icon name="logo-amazon"></ion-icon>
+apple::::<ion-icon name="logo-apple"></ion-icon>
+facebook::::<ion-icon name="logo-facebook"></ion-icon>
+instagram:::::<ion-icon name="logo-instagram"></ion-icon>
+twitter::::<ion-icon name="logo-twitter"></ion-icon>
+google::::<ion-icon name="logo-google"></ion-icon>
+chrome:::::<ion-icon name="logo-chrome"></ion-icon>
+github::::<ion-icon name="logo-github"></ion-icon>
+linkedin::::<ion-icon name="logo-linkedin"></ion-icon>
+windows:::<ion-icon name="logo-microsoft"></ion-icon>
+paypal::::<ion-icon name="logo-microsoft"></ion-icon>
+skype:::<ion-icon name="logo-skype"></ion-icon>
+tik-tok::::<ion-icon name="logo-tiktok"></ion-icon>
+pengwin:::<ion-icon name="logo-tux"></ion-icon>
+snapchat:::::<ion-icon name="logo-snapchat"></ion-icon>
+whale-docker::::<ion-icon name="logo-docker"></ion-icon>
+play-store:::<ion-icon name="logo-google-playstore"></ion-icon>
+drop-box::::<ion-icon name="logo-dropbox"></ion-icon>
+reddit:::<ion-icon name="logo-reddit"></ion-icon>
+windows11:<ion-icon name="logo-windows"></ion-icon>
+youtube:::<ion-icon name="logo-youtube"></ion-icon>
+wordpress::::<ion-icon name="logo-wordpress"></ion-icon>
+python::::<ion-icon name="logo-python"></ion-icon>
+javascript1::::<ion-icon name="logo-javascript"></ion-icon>
+nodejs::::<ion-icon name="logo-nodejs"></ion-icon>
+steam::::<ion-icon name="logo-steam"></ion-icon>
+react:::<ion-icon name="logo-react"></ion-icon>
+octocat::::<ion-icon name="logo-octocat"></ion-icon>
+csss:::<ion-icon name="logo-css3"></ion-icon>
+html::::<ion-icon name="logo-html5"></ion-icon>
+whatsapp:::::<ion-icon name="logo-whatsapp"></ion-icon>
+web-chat:::::<ion-icon name="logo-wechat"></ion-icon>
+no-smoking:::<ion-icon name="logo-no-smoking"></ion-icon>
+xbox:::;<ion-icon name="logo-xbox"></ion-icon>
+electron:::::<ion-icon name="logo-electron"></ion-icon>
+wifi:::<ion-icon name="logo-rss"></ion-icon>
+android::::<ion-icon name="logo-android"></ion-icon>
+
+
+
+
+
+
+MATERIAL ICONS::::::::::::::::::
+
+link:::::::::::
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+Search:::::<span class="material-symbols-outlined">
+search
+</span>
+......home
+......menu
+......close
+......settings
+......expanf_more
+...
